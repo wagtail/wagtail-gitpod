@@ -1,0 +1,16 @@
+ports:
+- port: 8080
+  onOpen: open-preview
+tasks:
+- init: >
+    python3 -m pip install wagtail &&
+    wagtail start mysite . &&
+    python3 -m pip install -r requirements.txt &&
+    python3 manage.py migrate &&
+    echo "from django.contrib.auth import get_user_model; get_user_model().objects.create_superuser('admin', '', 'changeme')" | python3 manage.py shell
+  command: >
+    export DJANGO_SETTINGS_MODULE=mysite.settings.dev &&
+    python3 manage.py runserver 0.0.0.0:8080
+github:
+    prebuilds:
+        pullRequestsFromForks: true
