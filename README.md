@@ -4,6 +4,8 @@ Launch a ready-to-code Wagtail development environment with a single click.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/wagtail/wagtail-gitpod)
 
+![Wagtail Gitpod screenshot](https://user-images.githubusercontent.com/1969342/82453552-f4c9aa00-9ab0-11ea-90ce-e37b5f680f8d.png)
+
 Steps:
 
 1. Click the ``Open in Gitpod`` button.
