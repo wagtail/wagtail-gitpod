@@ -2,7 +2,6 @@ ports:
 - port: 8080
   onOpen: open-preview
 tasks:
-- before: pyenv global 3.8.2
   init: >
     python -m pip install wagtail &&
     wagtail start mysite . &&
