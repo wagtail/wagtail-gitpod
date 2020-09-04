@@ -15,4 +15,5 @@ Continue the tutorial at [Extend the HomePage model](https://docs.wagtail.io/en/
 
 ![Wagtail Gitpod screenshot](https://user-images.githubusercontent.com/1969342/82453552-f4c9aa00-9ab0-11ea-90ce-e37b5f680f8d.png)
 
-![Wagtail Gitpod hit counter](https://hitcounter.pythonanywhere.com/nocount/tag.svg?url=https%3A%2F%2Fgithub.com%2Fwagtail%2Fwagtail-gitpod)
+---
+[Hits](https://hitcounter.pythonanywhere.com/nocount/tag.svg?url=https%3A%2F%2Fgithub.com%2Fwagtail%2Fwagtail-gitpod)
