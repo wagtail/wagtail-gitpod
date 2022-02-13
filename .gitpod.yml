@@ -1,14 +1,18 @@
-ports:
-- port: 8080
-  onOpen: open-preview
 tasks:
-- init: |
-    python -m pip install wagtail
-    wagtail start mysite .
-    python -m pip install -r requirements.txt
-    python manage.py migrate
-    echo "from django.contrib.auth import get_user_model; get_user_model().objects.create_superuser('admin', '', 'changeme')" | python3 manage.py shell
-  command: python manage.py runserver 0.0.0.0:8080
-github:
-    prebuilds:
-        pullRequestsFromForks: true
+  - init: |
+      python -m pip install wagtail
+      source ~/.bashrc
+      wagtail start mysite .
+      python -m pip install -r requirements.txt
+      python manage.py migrate
+      echo "from django.contrib.auth import get_user_model; get_user_model().objects.create_superuser('admin', '', 'changeme')" | python manage.py shell
+    command: |
+      python manage.py runserver
+  
+ports:
+  - port: 8000
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - ms-python.python
