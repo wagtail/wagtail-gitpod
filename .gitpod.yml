@@ -6,6 +6,7 @@ tasks:
       python -m pip install -r requirements.txt
       python manage.py migrate
       echo "from django.contrib.auth import get_user_model; get_user_model().objects.create_superuser('admin', '', 'changeme')" | python manage.py shell
+      echo "CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io']" >> mysite/settings/base.py
     command: |
       python manage.py runserver
   
