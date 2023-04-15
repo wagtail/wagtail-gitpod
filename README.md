@@ -20,6 +20,4 @@ Continue the tutorial at [Extend the HomePage model](https://docs.wagtail.io/en/
 
 Gitpod [prebuild](https://www.gitpod.io/docs/prebuilds) reduces wait time, by installing dependencies and running builds **before** you start a new workspace.
 
-Unfortunately, these prebuilds work as a cache. You could encounter a prebuild with outdated packages.
-
-If that is the case, you can [trigger a new prebuild](https://gitpod.io/#prebuild/https://github.com/wagtail/wagtail-gitpod).
+Unfortunately, prebuilds work as a cache. If you could encounter a prebuild with outdated packages. Open an issue.
